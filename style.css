@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: 'Lora', 'Lato', sans-serif;
     text-align: center;
 }
 
@@ -7,10 +7,10 @@ body {
     background-image: url("craterlake.jpg");
 }
 
-#main {
-    max-width: 50%;
+h1 {
+    font-size: 40px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
