@@ -11,10 +11,12 @@ let messages = {
 }
 
 function randomMessage() {
-    let randNum1 = Math.floor(Math.random() * 3)
-    let randNum2 = Math.floor(Math.random() * 3)
-    let randNum3 = Math.floor(Math.random() * 3)
-    console.log(`\nWorship: ${messages.worship[randNum1]}\n\nDo: ${messages.do[randNum2]}\n\nMemorize: ${messages.memorize[randNum3]}\n`)
+    let randNum1 = Math.floor(Math.random() * 3);
+    let randNum2 = Math.floor(Math.random() * 3);
+    let randNum3 = Math.floor(Math.random() * 3);
+    let output = `Today's Worship: ${messages.worship[randNum1]} Today's Practice: ${messages.do[randNum2]} Today's Memorization: ${messages.memorize[randNum3]}`;
+    let element = document.createElement("div");
+    element.appendChild(document.createTextNode(output));
+    document.body.appendChild(element);
 }
 
-randomMessage()
